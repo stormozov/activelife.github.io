@@ -1,0 +1,562 @@
+/* ------------ Specification ------------ */
+
+body {
+	font: 400 14px 'Open Sans', sans-serif;
+	color: #6c7279;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+    padding: 0;
+}
+
+p {
+	font-size: 14px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #2d3033;
+	margin: 0;
+    padding: 0;
+}
+
+h1, h4, h5 { 
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+a, a:hover {
+	text-decoration: none;
+	transition: all 1s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.btn {
+	font-size: 13px;
+	font-weight: 700;
+	width: 200px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #e84545;
+	border-radius: 2px;
+	padding: 13px 0 12px;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.btn:hover{
+    box-shadow: none;
+    -webkit-animation: si-button-pulse 0.8s 0s ease-out 1;
+    -moz-animation: si-button-pulse 0.8s 0s ease-out 1;
+    animation: si-button-pulse 0.8s 0s ease-out 1;
+    overflow: hidden;
+    color: #fff;
+}
+
+@keyframes si-button-pulse {
+    from {box-shadow: 0 0 8px 6px #e84545, 0 0 12px 14px #e84545;}
+
+    to {box-shadow: 0 0 10px 4px rgba(255, 48, 26, 0), 0 0 5px 30px rgba(255, 48, 26, 0);}
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+/* ------------ Specification end ------------ */
+
+/* ------------ Header ------------ */
+/* ------------ Navigation ------------ */
+
+.header {
+	background: #1b1f24 url(../img/main-bg.jpg) no-repeat fixed center center / cover;
+	padding: 28px 0 243px;
+	color: #fff;
+}
+
+
+.logo {
+	font-size: 30px;
+	color: #fff;
+}
+
+.logo:hover {
+	color: #fff;
+}
+
+.logo span {
+	font-weight: 700;
+	color: rgb(232,69,69);
+}
+
+.menu {
+	text-transform: uppercase;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.menu__link {
+	color: #fff;
+	padding-bottom: 39px;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 69px;
+}
+
+.menu__link:hover {
+	color: #fff;
+	border-bottom: 3px solid rgba(255,255,255,0.50);
+}
+
+/* ------------ Navigation end ------------ */
+
+/* ------------ Offer ------------ */
+
+.offer {
+	color: #fff;
+	margin-top: 31px;
+	padding-top: 178px;
+	text-align: center;
+	border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.offer__title {
+	color: #fff;
+}
+
+.offer__subtitle {
+	font-size: 21px;
+	max-width: 570px;
+	width: 100%;
+	margin-top: 36px;
+	margin-bottom: 31px;
+	display: inline-block;
+}
+
+/* ------------ Offer end ------------ */
+/* ------------ Header end ------------ */
+
+/* ------------ Features ------------ */
+
+.features {
+	padding: 121px 0 50px;
+}
+
+.feature {
+	margin: auto;
+	margin-bottom: 72px;
+	display: inline-block;
+	text-align: center;
+	max-width: 305px;
+	width: 100%;
+}
+
+.feature__title {
+	margin: 31px 0 18px;
+}
+
+/* ------------ Features end ------------ */
+
+/* ------------ Works ------------ */
+
+.works {
+	padding-bottom: 102px;
+}
+
+.work {
+	margin: 0 auto 26px;
+	position: relative;
+}
+
+.work__img {
+	max-width: 100%;
+	display: block;
+}
+
+.work__overlay {
+	width: 100%;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+	left: 0;
+	background-color: rgba(232,69,69,0.90);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.6s linear;
+}
+
+.work__title {
+	letter-spacing: 0.02em;
+	color: #fff;
+	max-width: 100%;
+}
+
+.work__link {
+	color: #fff;
+	margin: 12px 0 0;
+	max-width: 100%
+}
+
+.work__link:hover {
+	color: #761616;
+}
+
+.work__overlay:hover {
+	opacity: 1;
+}
+
+
+/* ------------ Works end ------------ */
+
+/* ------------ Team ------------ */
+
+.team {
+	padding: 127px 0 117px;
+	background-color: #f1f2fd;
+}
+
+.team-item {
+	max-width: 263px;
+	width: 100%;
+}
+
+.img-wrapp {
+	max-width: 262px;
+	max-height: 270px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.team-item__img {
+	max-width: 100%;
+	display: table-cell;
+    vertical-align: middle;
+    -o-object-fit: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.team-item__title {
+    margin-top: 26px;	
+}
+
+.team-item__spec {
+	color: #e84545;
+	margin: 8px 0 22px;
+}
+
+.team-item__text {
+	max-width: 100%;
+}
+
+.socials {
+	margin-top: 26px;
+}
+
+.socials__link {
+	margin-right: 4px;
+}
+
+.socials__icon {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #e8ecee;
+	background-color: #fff;
+	display: inline-block;
+}
+
+.socials__icon_fb {
+	padding: 11px 16px;
+}
+
+.socials__icon_tw {
+	padding: 13px 10px;
+}
+
+.socials__icon_in {
+	padding: 12px;
+}
+
+.socials__icon_fb:hover {
+	background-color: #3b5998;
+}
+
+.socials__icon_tw:hover {
+	background-color: #1faee9;
+}
+
+.socials__icon_in:hover {
+	background-color: #0077B5;
+}
+
+/* ------------ Team end ------------ */
+
+/* ------------ Clients ------------ */
+
+.client-photo {
+	height: 500px;
+	background: #646d52 url(../img/readingbook.jpg) no-repeat right top / cover;
+	-o-object-fit: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.quote {
+	color: #fff;
+	background-color: #53354a;
+	padding: 132px 70px 157px;
+	height: 100%;
+}
+
+.quote__text {
+	font-size: 36px;
+	font-style: italic;
+	line-height: 1.16em;
+	max-width: 500px;
+	width: 100%;
+}
+
+.quote__author {
+	color: #fff;
+	margin-top: 32px;
+	font-style: normal;
+}
+
+/* ------------ Clients end ------------ */
+
+/* ------------ Download ------------ */
+
+.download {
+	padding: 93px 0 100px;
+}
+
+.download__text {
+	font-size: 13px;
+	text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 36px;
+}
+
+.download__btn {
+	width: 280px;
+}
+
+/* ------------ Download end ------------ */
+
+/* ------------ Footer ------------ */
+
+.footer {
+	color: #fff;
+	background-color: #3a3e64;
+	padding-top: 83px;
+	padding-bottom: 74px;
+	border-bottom: 12px solid #313454;
+}
+
+.footer-elem__title {
+	color: #fff;
+	margin-bottom: 14px;
+}
+
+.footer-elem__text {
+	color: rgba(255,255,255,0.50);
+}
+
+.footer-elem__text_gray {
+	max-width: 318px;
+	color: #808080;
+}
+
+.red {
+	color: #e84545;
+}
+
+.footer-elem__link {
+	color: #fff;
+	transition: all 1s ease;
+}
+
+.footer-elem__link:hover {
+	color: #e84545;
+}
+
+/* ------------ Footer end ------------ */
+
+/* ------------ Media Queries ------------ */
+
+/* 992 - 1200 px */
+@media screen and (max-width: 1200px) {
+	.quote {
+		padding-top: 131px;
+	}
+	.quote__text {
+		font-size: 29px;
+	}
+	.features {
+		padding-bottom:  49px;
+	}
+}
+
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+	.logo {
+		display: block;
+		text-align: center;
+	}
+	nav {
+		margin: 20px auto 0;
+	}
+	.offer {
+		margin-top: 40px;
+    	padding-top: 151px;
+	}
+	.works {
+		padding-bottom: 86px;
+	}
+	.team-item {
+		text-align: center;
+		margin: 0 auto 40px;
+	}
+	.socials {
+		display: inline-block;
+		justify-content: center;
+	}
+	.quote {
+		text-align: center;
+	}
+	.quote__text {
+		font-size: 25px;
+		margin: 0 auto;
+	}
+	.quote__author {
+		margin: 32px auto 0;
+		max-width: 245px;
+	}
+	.footer-elem {
+		margin-bottom: 30px;
+	}
+	.footer-elem__text {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	.offer {
+		border-top: none;
+	}
+	.logo {
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.offer {
+		margin-top: 31px;
+	}
+	.features {
+		padding-bottom: 10px;
+	}
+	.client-photo {
+		height: 300px;
+	}
+	.work {
+		margin: 0 auto 15px;
+	}
+	.quote {
+		padding: 103px 0;
+	}
+	.quote__text {
+		font-size: 20px;
+	}
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	.header {
+		padding-bottom: 130px;
+	}
+	.logo {
+		margin-bottom: 0;
+	}
+	.offer {
+		margin-top: 29px;
+		padding-top: 101px;
+	}
+	.offer__title {
+		font-size: 30px;
+	}
+	.offer__subtitle {
+		font-size: 16px;
+		margin-top: 12px;
+	}
+	.features {
+		padding-top: 92px;
+	}
+	.works {
+		padding-bottom: 57px;
+	}
+	.team {
+		padding-top: 110px;
+		padding-bottom: 27px;
+	}
+	.quote {
+		font-size: 18px;
+	    line-height: 1.7em;
+	    padding-left: 10px;
+    	padding-right: 10px;
+	}
+	.client-photo {
+		right: 10px;
+	}
+}
